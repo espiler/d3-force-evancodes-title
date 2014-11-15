@@ -3,34 +3,17 @@
 <head>
     <meta charset='utf-8'>
     <title>D3 Force</title>
-    <style>
-
-    .node {
-        fill: #ccc;
-        stroke: #fff;
-        stroke-width: 2px;
-    }
-
-    body {
-    	background-color: gray;
-    }
-
-    svg {
-    	display: block;
-    	background-color: white;
-    	margin: 0 auto 0 auto;
-    	border: 2px solid black;
-    }
-
-</style>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
-    <script src='http://d3js.org/d3.v3.min.js'></script>
+    <script src='js/d3.js'></script>
+    <div class="d"></div>
+    <h6> a software engineering blog</h6>
     <script>
 
 // set dimensions of force visualization
-var width = 700;
-var height = 400;
+var width = window.innerWidth;
+var height = 600;
 
 //miliseconds for duration of animation. default 250.
 var animationStep = 250;
@@ -41,19 +24,20 @@ var nodes;
 var mouse;
 var title;
 
-//keep physics figures here for easy modification
-var gravity = 0.07;
-var nodeCharge = -15;
+//keep physics/style figures here for easy modification
+var gravity = 0.12;
+var nodeCharge = -20;
 var mouseCharge = -3000;
 var numOfNodes = 220
 var nameNodeStartX = 400;
 var nameNodeStartY = 250;
+var strokeWidth = 1.7
 
 //define attributes for nodes - scaleCategory10 = 10 predefined colors from d3 API (include link)
 var color = d3.scale.category10()
 
 //create SVG container with d3 to hold elements
-var svg = d3.select('body').append('svg')
+var svg = d3.select('.d').append('svg')
 	.attr('width', width)
 	.attr('height', height)
 
@@ -80,33 +64,19 @@ var initForce = function(){
 	mouse.fixed = true;
 	mouse.charge = mouseCharge;
 
-	//define static name nodes
-	// var nameNodesData = d3.range(5)
-	// 	.map(function(val, i) { 
-	// 		return {
-	// 			radius: 15,
-	// 			x: nameNodeStartX,
-	// 			xTrue: nameNodeStartX + i*30,
-	// 			y: nameNodeStartY + i*30,
-	// 			yTrue: nameNodeStartY,
-	// 			charge: 0,
-	// 			name: true,
-	// 			fill: "white"
-	// 		}; 
-	// 	})
-	// nodesData = nodesData.concat(nameNodesData);
-
 	//define force layout object
 	force = d3.layout.force()
+	
 	//standard d3 tuple for width/height of force layout
 		.size([width,height])
 		.nodes(nodesData)
 		.gravity(gravity)
+
 	//set separate charge for nodes (0) and mouse (negative, as you like)
 		.charge(function(node) {
-
 			return node.charge;
 		});
+
 
 	//add nodes to svg object and set properties to those predefined in datum
 	nodes = svg.selectAll('.node')
@@ -118,14 +88,14 @@ var initForce = function(){
 		.attr('cx', function(d,i) { return d.xTrue ? d.xTrue : d.x; })
 		.attr('cy', function(d,i) { return d.yTrue ? d.yTrue : d.y; })
 		.style("fill", function(d, i) { return d.fill? d.fill : color(i % 10) })
-		.style("stroke-width", 1.5);
+		.style("stroke-width", strokeWidth);
 
 	title = svg.append('image')
-		.attr('xlink:href','images/evancodes-white.png')
-		.attr('x', width/4)
-		.attr('y', height/4)
-		.attr('height', 160)
-		.attr('width', 360)
+		.attr('xlink:href','images/evancodes-white2.png')
+		.attr('x', width/2.7)
+		.attr('y', height/3)
+		.attr('height', '25%')
+		.attr('width', '25%')
 
 
 	force.on('tick', tick)
