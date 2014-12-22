@@ -1,0 +1,203 @@
+/************ DEFAULTS **************/
+
+a {
+    text-decoration: none;
+}
+
+
+
+/************ HEADER **************/
+
+.node {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.d3head {
+    background-image: url("../../images/goldScalePiece.png");
+    height: 125px;
+    width: 105%;
+    margin: -10px 0 0 -10px;
+}
+
+body {
+    color: transparent;
+	background-image: url("../../images/background.jpg");
+    background-attachment: fixed;
+    background-size: 600px;
+    background-repeat: repeat;
+    /*background-clip: text;*/
+    /*overflow: hidden;*/
+}
+
+h4 {
+    text-align: center;
+    font: normal 55px 'avenir_85_heavyheavy', sans-serif;
+    line-height: 65px;
+    color: rgb(25,25,25);
+    transform:scale(1.07,1); /* W3C */
+    -webkit-transform:scale(1.07,1); /* Safari and Chrome */
+    -moz-transform:scale(1.07,1); /* Firefox */
+    -ms-transform:scale(1.07,1); /* IE 9 */
+    -o-transform:scale(1.07,1); /* Opera */
+    /*background: url("../../images/background.jpg"); 
+    -webkit-background-clip: text, border; */
+    /*color: transparent;*/
+
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    font: normal 30px 'champagne__limousinesregular', sans-serif;
+    transform:scale(1.1,1); /* W3C */
+    -webkit-transform:scale(1.1,1); /* Safari and Chrome */
+    -moz-transform:scale(1.1,1); /* Firefox */
+    -ms-transform:scale(1.1,1); /* IE 9 */
+    -o-transform:scale(1.1,1); /* Opera */
+   
+}
+
+.d3svg {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+/************ BLOG SNIPPETS **************/
+
+.snippets {
+    margin-top: 125px;
+    color: white;
+}
+
+.snippetTitle {
+    display: inline-block;
+    background-color: rgb(11,87,160);
+    height: 40px;
+    width: auto;
+    margin: 50px 0 0 -10px;
+    text-indent: 20px;
+    padding: 14px 20px 0 0;
+    font-family: 'geosansLight';
+    font-size: 20px;
+    color: white;
+
+}
+
+
+.snippetBody {
+    background-color: black;
+    /*height: 100px;*/
+    margin: -20px 0 0 20px; 
+    width: 65%;
+    border-radius: 10px;
+    padding: 30px 25px 20px 30px;
+    font-family: 'geosansLight';
+    color: white;
+
+}
+
+/************ ARCHIVES **************/
+
+.archives {
+    position: relative;
+    margin: 80px 0 0 -10px;
+    color: white;
+    float: right;   
+}
+
+.archiveHead {
+    /*display: inline-block;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(0,111,61);
+    height: 40px;
+    width: auto;
+    padding: 14px 20px 0 20px;
+    font-family: 'geosansLight';
+    font-size: 20px;
+
+}
+
+
+.archiveItems {
+    background-color: black;
+    margin: 25px 20px 0 0;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 30px 25px 20px 30px;
+    font-family: 'geosansLight';
+    color: white;
+
+}
+
+
+/************ ../../FONTS **************/
+
+@font-face {
+    font-family: 'avenir_85_heavyheavy';
+    src: url('../../fonts/avenir_heavy-webfont.eot');
+    src: url('../../fonts/avenir_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/avenir_heavy-webfont.woff2') format('woff2'),
+         url('../../fonts/avenir_heavy-webfont.woff') format('woff'),
+         url('../../fonts/avenir_heavy-webfont.ttf') format('truetype'),
+         url('../../fonts/avenir_heavy-webfont.svg#avenir_85_heavyheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagne__limousinesbold';
+    src: url('../../fonts/champagne__limousines_bold-webfont.eot');
+    src: url('../../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/champagne__limousines_bold-webfont.woff2') format('woff2'),
+         url('../../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
+         url('../../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
+         url('../../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagne__limousinesitalic';
+    src: url('../../fonts/champagne__limousines_italic-webfont.eot');
+    src: url('../../fonts/champagne__limousines_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/champagne__limousines_italic-webfont.woff2') format('woff2'),
+         url('../../fonts/champagne__limousines_italic-webfont.woff') format('woff'),
+         url('../../fonts/champagne__limousines_italic-webfont.ttf') format('truetype'),
+         url('../../fonts/champagne__limousines_italic-webfont.svg#champagne__limousinesitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'champagne__limousinesregular';
+    src: url('../../fonts/champagne_limousines-webfont.eot');
+    src: url('../../fonts/champagne_limousines-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/champagne_limousines-webfont.woff2') format('woff2'),
+         url('../../fonts/champagne_limousines-webfont.woff') format('woff'),
+         url('../../fonts/champagne_limousines-webfont.ttf') format('truetype'),
+         url('../../fonts/champagne_limousines-webfont.svg#champagne__limousinesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sans_fishes';
+    src: url('../../fonts/sansFishes.ttf');
+}
+
+@font-face {
+    font-family: 'geosansLight';
+    src: url('../../fonts/geosansLight.ttf');
+}
+
+
+

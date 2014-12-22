@@ -1,0 +1,21 @@
+{
+  "name": "d3-force-evancodes-title",
+  "version": "0.0.0",
+  "homepage": "https://github.com/espiler/d3-force-evancodes-title",
+  "authors": [
+    "Evan Spiler <monkeysrawesome@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.4.13",
+    "bootstrap": "~3.3.1",
+    "angular-md": "~1.0.0"
+  }
+}
