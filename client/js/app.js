@@ -1,6 +1,7 @@
 angular.module('evancodes', [
 	'evancodes.main',
 	'evancodes.posts',
+  'evancodes.newPost',
 	'ui.router'
 ])
 
