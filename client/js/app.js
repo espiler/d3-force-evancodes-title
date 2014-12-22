@@ -1,5 +1,6 @@
 angular.module('evancodes', [
 	'evancodes.main',
+	'evancodes.posts',
 	'ui.router'
 ])
 
@@ -10,6 +11,22 @@ angular.module('evancodes', [
       templateUrl: 'client/templates/main.html',
       controller: 'MainController',
       url: '/main'
+    })
+    .state('posts', {
+      templateUrl: 'client/templates/post.html',
+      controller: 'PostController',
+      url: '/posts/:id',
+      // animation: {
+      //   enter: 'shrink-in',
+      //   leave: 'grow-out',
+      //   ease: 'back',
+      //   speed: 400
+      // }
+    })
+    .state('makeNewPostShindig', {
+      templateUrl: 'client/templates/newPost.html',
+      controller: 'NewPostController',
+      url: '/makeNewPostShindig'
     })
 })
 
@@ -23,17 +40,3 @@ angular.module('evancodes', [
 //   	}
 //   }
 // }]);
-
-
-
-    // .state('edit', {
-    //   templateUrl: 'app/edit/edit.html',
-    //   controller: 'EditController',
-    //   url: '/edit'
-    // })
-
-    // .state('home', {
-    // 	templateUrl: 'app/dashboard/dashboard.html',
-    // 	controller: 'DashboardController',
-    // 	url: '/dashboard'
-    // })
