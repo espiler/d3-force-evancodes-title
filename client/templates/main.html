@@ -8,22 +8,17 @@
 </div>
 
 <!-- Blog Snippets -->
-<div class="snippets">
-  <!-- <a href="{{BLOG URL}}"> -->
-      <div class="snippetTitle" ng-click="newPost()"> 
+<div class="snippetTitle" ng-click=""> 
           {{data}}
       </div>
+<div class="snippets" ng-repeat="post in posts">
+  <!-- <a href="{{BLOG URL}}"> -->
+      <div class="snippetTitle"> 
+          {{post.title}}
+      </div>
       <div class="snippetBody">
-          <p> This is a little blog snippet. I say many things here about d3 and being a coder and some other interesting stuffs that nobody is reading right now because the blog isn't online. hopefully nobody checks the real page yet because there's no content there and if I don't get it it up soon (maybe already too late), then I'll lose my free Azuer services. EEK!</p>
+          {{post.content}}
       </div>
   <!-- </a> -->
-  <a href="">
-      <div class="snippetTitle"> 
-          This is a Blog Title
-      </div>
-      <div class="snippetBody">
-          <p> {{posts}}</p>
-      </div>
-  </a>
 </div>
 

@@ -10,7 +10,8 @@ angular.module('evancodes.newPost', [])
 		  title: title,
 		  content: content,
 		  url: title.toLowerCase().split(' ').join("-")
+		  datePosted: Date.now()
 		});
 	}
-	
+
 })

@@ -5,14 +5,15 @@ angular.module('evancodes.main', [])
 	$scope.data = "SOMETHING"
 	$scope.posts = []
 
+
 	$scope.getAllPosts = function() {
 		var ref = new Firebase("https://brilliant-torch-8757.firebaseio.com/posts");
 		ref.on("value", function(snapshot) {
-			var posts = snapshot.val()
+			var posts = snapshot.val();
 			for (var post in posts) {
-				$scope.posts.push(posts[post])
+				$scope.posts.push(posts[post]);
 			}
-			console.log($scope.posts)
+			console.log($scope.posts);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
 		});
