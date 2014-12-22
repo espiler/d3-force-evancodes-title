@@ -1,23 +1,23 @@
 angular.module('evancodes.main', [])
 
 
-.controller('MainController', function($http, $scope, $rootScope, $location, $stateParams) {
+.controller('MainController', function(Main, $http, $scope) {
 	$scope.data = "SOMETHING"
-	$scope.getPosts = function() {
-		console.log('TESTINGSF((((((((((((((()*)(**(*)*()*()')
-		return $http({
-		  method: 'GET',
-		  //TODO: Dynamically update username, and display at top of dashboard page
-		  url: 'https://brilliant-torch-8757.firebaseio.com'
-		})
-		.then(function(res, err) {
-			if (err) {
-				console.log('ERROR', err)
+	$scope.posts = []
+
+	$scope.getAllPosts = function() {
+		var ref = new Firebase("https://brilliant-torch-8757.firebaseio.com/posts");
+		ref.on("value", function(snapshot) {
+			var posts = snapshot.val()
+			for (var post in posts) {
+				$scope.posts.push(posts[post])
 			}
-			console.log('RESULTS', res.data)
-		})
+			console.log($scope.posts)
+		}, function (errorObject) {
+		  console.log("The read failed: " + errorObject.code);
+		});
 	}
 
+	$scope.getAllPosts();
 
-	$scope.getPosts();
 })

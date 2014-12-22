@@ -16,3 +16,6 @@ app.use(express.static(__dirname + '/..'));
 app.listen(port);
 console.log("Listening on localhost: " + port)
 
+app.get('/', function(req, res) {
+})
+
