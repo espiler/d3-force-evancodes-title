@@ -1,19 +1,30 @@
 angular.module('evancodes', [
-  'evancodes.post',
-  'evancodes.about',
+	'evancodes.main',
+	'ui.router'
 ])
 
-.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
-  $urlRouterProvider.otherwise('/');
-  
-  $httpProvider.interceptors.push('httpRequestInterceptor');
-
+.config(function($urlRouterProvider, $stateProvider) {  
+  $urlRouterProvider.otherwise('/main');
   $stateProvider
-    .state('home', {
-      templateUrl: '../templates/main.html',
+    .state('main', {
+      templateUrl: 'client/templates/main.html',
       controller: 'MainController',
-      url: '/index.html'
+      url: '/main'
     })
+})
+
+// .factory('httpRequestInterceptor', ['$q', '$location', '$rootScope', function($q, $location) {
+//   return {
+//     'responseError': function(rejection) {
+//       if (rejection.status === 403) {
+//         $location.path('/');
+//         return $q.reject(rejection);
+//       }
+//   	}
+//   }
+// }]);
+
+
 
     // .state('edit', {
     //   templateUrl: 'app/edit/edit.html',
@@ -26,5 +37,3 @@ angular.module('evancodes', [
     // 	controller: 'DashboardController',
     // 	url: '/dashboard'
     // })
-
-})
