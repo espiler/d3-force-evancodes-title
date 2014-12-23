@@ -5,18 +5,20 @@ textarea {
 textarea:focus {
   outline: none;
 }
+
+
 </style>
-    <form>
-      <div class="form-group">
-        <textarea ng-model="title" class="title" placeholder='"Title"'></textarea>
-      </div>
-      <div class="form-group">
-        <textarea ng-model="content" class="content" placeholder='Post'></textarea>
-      </div>
-      <input class="btn btn-blue pressBtn" ng-click="newPost()" value="Press New" type="submit" />
-    </form>
+
+<form>
+  <div class="form-group">
+    <textarea ng-model="title" class="title" placeholder='Title'></textarea>
   </div>
-</div>
+  <div class="form-group">
+    <textarea ng-model="content" class="content" placeholder='Post'></textarea>
+  </div>
+  <input class="btn btn-blue pressBtn" ng-click="newPost()" value="Press New" type="submit" />
+</form>
+
 
 <script type="text/javascript">
 function noenter() {
