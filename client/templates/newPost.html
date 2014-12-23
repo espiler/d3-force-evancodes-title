@@ -6,14 +6,14 @@ textarea:focus {
   outline: none;
 }
 </style>
+    <form>
       <div class="form-group">
         <textarea ng-model="title" class="title" placeholder='"Title"'></textarea>
       </div>
       <div class="form-group">
         <textarea ng-model="content" class="content" placeholder='Post'></textarea>
       </div>
-      <input ng-if="!isUpdate" class="btn btn-blue pressBtn" ng-click="submit(title, content, created)" value="Press New" type="submit" />
-      <input ng-if="isUpdate" class="btn btn-green pressBtn" ng-click="updatePost(title, content)" value="Update" type="submit" />
+      <input class="btn btn-blue pressBtn" ng-click="newPost()" value="Press New" type="submit" />
     </form>
   </div>
 </div>
