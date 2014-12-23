@@ -5,6 +5,10 @@ angular.module('evancodes.main', [])
 	$scope.data = "SOMETHING"
 	$scope.posts = []
 
+	$scope.update = function() {
+		console.log('updating.......')
+		console.log($('.snippetBody').text());
+	}
 
 	$scope.getAllPosts = function() {
 		var ref = new Firebase("https://brilliant-torch-8757.firebaseio.com/posts");
@@ -13,6 +17,7 @@ angular.module('evancodes.main', [])
 			for (var post in posts) {
 				$scope.posts.push(posts[post]);
 			}
+			$scope.posts.sort(function(a,b) { return b.datePosted - a.datePosted; })
 			console.log($scope.posts);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);

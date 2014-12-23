@@ -78,6 +78,7 @@ h6 {
 .snippetTitle {
     display: inline-block;
     background-color: rgb(11,87,160);
+    box-shadow: 1px 1px 9px 0px black;
     height: 40px;
     width: auto;
     margin: 50px 0 0 -10px;
@@ -91,14 +92,14 @@ h6 {
 
 
 .snippetBody {
-    background-color: black;
+    background-color: rgb(180,180,180);
     /*height: 100px;*/
     margin: -20px 0 0 20px; 
     width: 65%;
     border-radius: 10px;
     padding: 30px 25px 20px 30px;
     font-family: 'geosansLight';
-    color: white;
+    color: black;
 
 }
 
@@ -117,6 +118,7 @@ h6 {
     right: 0;
     top: 0;
     background-color: rgb(0,111,61);
+    box-shadow: 1px 1px 9px 0px black;
     height: 40px;
     width: auto;
     padding: 14px 20px 0 20px;
@@ -127,7 +129,7 @@ h6 {
 
 
 .projectItems {
-    background-color: black;
+    background-color: rgb(180,180,180);
     margin: 25px 20px 0 0;
     height: 100px;
     width: 200px;
