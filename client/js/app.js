@@ -3,7 +3,8 @@ angular.module('evancodes', [
 	'evancodes.posts',
   'evancodes.newPost',
   'evancodes.services',
-	'ui.router'
+	'ui.router',
+  'ngSanitize'
 ])
 
 .config(function($urlRouterProvider, $stateProvider) {  

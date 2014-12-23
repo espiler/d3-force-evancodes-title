@@ -2,14 +2,12 @@
 <div class="snippetTitle" ng-click="update()"> 
           {{data}}
       </div>
-<div class="snippets" ng-repeat="post in posts | limitTo: 5 | orderBy: post.title:reverse">
-  <!-- <a href="{{BLOG URL}}"> -->
+<div class="snippets" ng-repeat="post in posts | limitTo: 5">
+  <a href="http://127.0.0.1:8000/#/posts/{{post.url}}">
       <div class="snippetTitle"> 
           {{post.title}}
       </div>
-      <div class="snippetBody">
-          {{post.content}}
+      <div class="snippetBody" ng-bind-html="post.content">
       </div>
-  <!-- </a> -->
+  </a>
 </div>
-

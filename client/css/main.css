@@ -4,6 +4,12 @@ a {
     text-decoration: none;
 }
 
+pre {
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+}
+
 
 
 /************ HEADER **************/
@@ -103,6 +109,10 @@ h6 {
 
 }
 
+.snippetBody img {
+    height: 300px;
+}
+
 /************ PROJECTS **************/
 
 .projects {
@@ -131,13 +141,18 @@ h6 {
 .projectItems {
     background-color: rgb(180,180,180);
     margin: 25px 20px 0 0;
-    height: 100px;
+    /*height: 100px;*/
     width: 200px;
     border-radius: 10px;
     padding: 30px 25px 20px 30px;
     font-family: 'geosansLight';
     color: white;
+    padding-bottom: 30px;
 
+}
+
+.oneProject {
+    margin-top: 15px;
 }
 
 
