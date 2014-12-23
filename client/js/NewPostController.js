@@ -9,7 +9,7 @@ angular.module('evancodes.newPost', [])
 		var ref = new Firebase("https://brilliant-torch-8757.firebaseio.com/posts");
 		var url = $scope.title.toLowerCase().split(' ').join("-")
 		var postsRef = ref.child(url);
-		postsRef.push({
+		postsRef.set({
 		  title: $scope.title,
 		  content: $scope.content,
 		  datePosted: Date.now(),

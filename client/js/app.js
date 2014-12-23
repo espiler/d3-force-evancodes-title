@@ -18,12 +18,6 @@ angular.module('evancodes', [
       templateUrl: 'client/templates/post.html',
       controller: 'PostController',
       url: '/posts/:id',
-      // animation: {
-      //   enter: 'shrink-in',
-      //   leave: 'grow-out',
-      //   ease: 'back',
-      //   speed: 400
-      // }
     })
     .state('makeNewPostShindig', {
       templateUrl: 'client/templates/newPost.html',

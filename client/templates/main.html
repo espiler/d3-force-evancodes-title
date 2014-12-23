@@ -1,17 +1,8 @@
-<!-- Project Links -->
-<div class="projects">
-  <div class="projectHead"> 
-      Projects
-  </div>
-  <div class="projectItems"> 
-  </div>
-</div>
-
 <!-- Blog Snippets -->
 <div class="snippetTitle" ng-click=""> 
           {{data}}
       </div>
-<div class="snippets" ng-repeat="post in posts">
+<div class="snippets" ng-repeat="post in posts | limitTo: 5 | orderBy: -post.title">
   <!-- <a href="{{BLOG URL}}"> -->
       <div class="snippetTitle"> 
           {{post.title}}

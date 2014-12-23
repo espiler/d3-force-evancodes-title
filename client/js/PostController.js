@@ -9,7 +9,7 @@ angular.module('evancodes.posts', [])
 			if (snapshot.val() === null) { $scope.notFound = true; }
 			else {
 				var currentPost = snapshot.val();
-				$scope.post = currentPost[Object.keys(currentPost)[0]];
+				$scope.post = currentPost;
 				console.log($scope.post);
 				$('.snippetTitle').text($scope.post.title);
 				$('.snippetBody').html($scope.post.content);
