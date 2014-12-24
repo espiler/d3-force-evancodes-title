@@ -2,7 +2,7 @@ angular.module('evancodes.posts', [])
 
 .controller('PostController', function($scope, $rootScope, $location, $window) {
 	var url = window.location.href;
-	var postUrl = url.toString().substring(39);
+	var postUrl = url.toString().substring(33);
 	var getSinglePost = function() {
 		var ref = new Firebase("https://brilliant-torch-8757.firebaseio.com/posts/" + postUrl);
 		ref.on("value", function(snapshot) {
