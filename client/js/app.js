@@ -4,10 +4,11 @@ angular.module('evancodes', [
   'evancodes.newPost',
   'evancodes.services',
 	'ui.router',
-  'ngSanitize'
+  'ngSanitize',
+  'ngMaterial'
 ])
 
-.config(function($urlRouterProvider, $stateProvider) {  
+.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {  
   $urlRouterProvider.otherwise('/main');
   $stateProvider
     .state('main', {
@@ -25,7 +26,7 @@ angular.module('evancodes', [
       controller: 'NewPostController',
       url: '/makeNewPostShindig'
     })
-})
+});
 
 // .factory('httpRequestInterceptor', ['$q', '$location', '$rootScope', function($q, $location) {
 //   return {

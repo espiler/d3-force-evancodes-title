@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <title>Evan Codes</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
     <link href="client/css/main.css" rel="stylesheet" />
     <link rel="shortcut icon" href="images/monkey.png">
   </head>
@@ -10,8 +11,11 @@
     
 
 <!-- Header with Gold scales, D3, "EVAN CODES", blog subtitle -->
+    <md-button class="md-raised md-primary homeButton" href="#/">Home</md-button>
+    <md-button class="md-raised md-primary aboutButton">About</md-button>
     <a href="#/">
-      <div class="d3head"></div>
+      <div class="d3head">
+      </div>
 
       <div class="title">
               <h4>EVAN<br/>CODES</h4>
@@ -27,22 +31,22 @@
       <div class="projectItems">
         <div class="oneProject"> 
           <a href="http://friendguessr.meteor.com" target="blank">
-            - Twitter FriendGuessr - 
+            &bull; Twitter FriendGuessr 
           </a>
         </div>
         <div class="oneProject"> 
           <a href="http://www.wafflepress.org/#/users/espiler" target="blank">
-            - Wafflepress - 
+            &bull; Wafflepress 
           </a>
         </div>
         <div class="oneProject"> 
           <a href="http://stockfuse.herokuapp.com" target="blank">
-            - StockFuse - 
+            &bull; StockFuse 
           </a>
         </div>
         <div class="oneProject"> 
           <a href="">
-            - wutz hot - 
+            &bull; wutz hot
           </a>
         </div>
       </div>
@@ -61,7 +65,6 @@
             <small class="breadcrumb">Copyright &copy; Evan Spiler, 2014</small>
           </div>
         </div>
-        <!-- /.row -->
       </footer>
   </div>
 
@@ -75,6 +78,12 @@
   <script src='bower_components/d3/d3.min.js'></script>
   <script src='bower_components/jquery/dist/jquery.min.js'></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+  <!-- Angular Material Dependencies -->
+  <script src="lib/hammer.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
 
 
   <!--APP SCRIPTS-->

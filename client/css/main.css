@@ -29,7 +29,7 @@ pre {
 
 body {
     color: transparent;
-	background-image: url("../../images/background.jpg");
+	background-image: url("../../images/background_light.jpg");
     background-attachment: fixed;
     background-size: 600px;
     background-repeat: repeat;
@@ -72,6 +72,20 @@ h6 {
 
 .title {
     margin-bottom: 100px;
+}
+
+.homeButton {
+    position: absolute;
+    padding: 10px 10px;
+    margin: 30px 0 0 20px;
+    color: black;
+}
+
+.aboutButton {
+    position: absolute;
+    padding: 10px 10px;
+    margin: 30px 0 0px 100px;
+    color: black;
 }
 
 /************ BLOG SNIPPETS **************/
