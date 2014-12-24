@@ -10,6 +10,7 @@
     "angular-password": "0.0.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.4.3",
+    "bower": "0.0.0",  
     "express": "^4.4.5",
     "express-session": "^1.9.3",
     "highlight.js": "^8.4.0",
@@ -19,5 +20,9 @@
     "morgan": "^1.1.1",
     "q": "^1.0.1",
     "request": "^2.36.0"
+  },
+  
+  "scripts": {
+      "postinstall": "bower install"
   }
 }
