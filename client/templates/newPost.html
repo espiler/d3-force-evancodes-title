@@ -20,6 +20,16 @@ textarea:focus {
 </form>
 
 
+<!-- POST PREVIEW -->
+<div class="snippets">
+  <div class="snippetTitle"> 
+      {{title}}
+  </div>
+  <div class="snippetBody" ng-bind-html="content">
+  </div>
+</div>
+
+
 <script type="text/javascript">
 function noenter() {
   return !(window.event && window.event.keyCode == 13);
