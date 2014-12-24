@@ -11,7 +11,7 @@ app.use(morgan('dev'));
 app.use(express.static(__dirname + '/..'));
 
 
-app.listen(process.env.port || 8000);
+app.listen(process.env.PORT || 8000);
 console.log("Listening on " + 8000)
 
 app.get('/', function(req, res) {
