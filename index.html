@@ -3,16 +3,16 @@
   <head>
     <meta charset='utf-8'>
     <title>Evan Codes</title>
-    <link rel="stylesheet" href="client/css/angular-material.css">
-    <link href="client/css/main.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/monkey.png">
+    <link rel="stylesheet" href="client/css/angular-material.css"/>
+    <link rel="stylesheet" href="client/css/main.css"/>
+    <link rel="shortcut icon" href="images/monkey.png"/>
   </head>
   <body>
     
 
 <!-- Header with Gold scales, D3, "EVAN CODES", blog subtitle -->
     <md-button class="md-raised md-primary homeButton" href="#/">Home</md-button>
-    <md-button class="md-raised md-primary aboutButton">About</md-button>
+    <md-button ng-controller="AboutController" ng-click="showAdvanced($event)" class="md-raised md-primary aboutButton">About</md-button>
     <a href="#/">
       <div class="d3head">
       </div>
@@ -55,7 +55,6 @@
 <!-- MAIN CONTAINER for Snippets or Blog Post -->
     <div ui-view></div>
 
-
 <!--FOOTER-->
   <div class="container footer">
       <hr>
@@ -92,6 +91,7 @@
   <script src='client/js/MainController.js'></script>
   <script src='client/js/PostController.js'></script>
   <script src='client/js/NewPostController.js'></script>
+  <script src='client/js/AboutController.js'></script>
   <script src='client/js/services.js'></script>
   <script src='https://static.firebase.com/v0/firebase.js'></script>
 

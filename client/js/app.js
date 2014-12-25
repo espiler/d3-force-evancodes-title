@@ -3,6 +3,7 @@ angular.module('evancodes', [
 	'evancodes.posts',
   'evancodes.newPost',
   'evancodes.services',
+  'evancodes.about',
 	'ui.router',
   'ngSanitize',
   'ngMaterial'

@@ -88,6 +88,20 @@ h6 {
     color: black;
 }
 
+
+
+/************ ABOUT WINDOW **************/
+
+.aboutWindow {
+    color: black;
+}
+
+.cancel {
+    float: right;
+}
+
+
+
 /************ BLOG SNIPPETS **************/
 
 .snippets {
