@@ -23,8 +23,8 @@ pre {
 .d3head {
     background-image: url("../../images/goldScalePiece.png");
     height: 100px;
-    width: 105%;
-    margin: -10px 0 0 -10px;
+    width: 100%;
+    margin-top: -10px;
 }
 
 body {
@@ -40,10 +40,6 @@ body {
 .d3svg {
 	display: block;
 	margin: 0 auto 0 auto;
-}
-
-.title {
-    margin-bottom: 100px;
 }
 
 .homeButton {
@@ -104,13 +100,13 @@ body {
     display: inline-block;
     background-color: rgb(11,87,160);
     box-shadow: 1px 1px 9px 0px black;
-    height: 40px;
+    height: 50px;
     width: auto;
     margin: 50px 0 0 0px;
     text-indent: 20px;
-    padding: 14px 20px 0 0;
+    padding: 8px 20px 25px 0;
     font-family: 'geosansLight';
-    font-size: 22px;
+    font-size: 24px;
     color: white;
 
 }
@@ -118,14 +114,16 @@ body {
 
 .snippetBody, .postBody {
     background-color: rgb(180,180,180);
-    /*height: 100px;*/
     margin: -20px 0 0 20px; 
-    width: 65%;
     border-radius: 10px;
     padding: 30px 23px 20px 30px;
     font-family: 'geosansLight';
     color: black;
 
+}
+
+.snippetBody a, .postBody a {
+    text-decoration: none;
 }
 
 .snippetBody img {
@@ -145,51 +143,20 @@ body {
 
 /************ PROJECTS **************/
 
-.projects {
-    position: relative;
-    margin: 80px 0 0 -10px;
-    color: white;
-    float: right;   
-}
-
-.projectHead {
-    /*display: inline-block;*/
+.projectDrop {
     position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgb(0,111,61);
-    box-shadow: 1px 1px 9px 0px black;
-    height: 40px;
-    width: auto;
-    padding: 14px 20px 0 20px;
-    font-family: 'geosansLight';
-    font-size: 20px;
-
+    right: 17px;
+    top: 21px;
 }
 
-
-.projectItems {
-    background-color: rgb(180,180,180);
-    margin: 25px 20px 0 0;
-    /*height: 100px;*/
-    width: 200px;
-    border-radius: 10px;
-    padding: 30px 25px 20px 30px;
-    font-family: 'geosansLight';
-    font-size: 20px;
+.projectButton, .projectButton:hover, .projectButton:focus {
+    background-color: #1565C0;
     color: white;
-    padding-bottom: 30px;
-
+    height: 40px;
+    /*box-shadow: 0.2px 0.2px 6px 0px black;*/
+    border-width: 0px;
 }
 
-.projectItems a {
-    color: black;
-    text-decoration: none;
-}
-
-.oneProject {
-    margin-top: 15px;
-}
 
 
 /************ FOOTER **************/
@@ -199,47 +166,8 @@ body {
 }
 
 
-
 /************ FONTS **************/
 
-@font-face {
-    font-family: 'avenir_85_heavyheavy';
-    src: url('../../fonts/avenir_heavy-webfont.eot');
-    src: url('../../fonts/avenir_heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/avenir_heavy-webfont.woff2') format('woff2'),
-         url('../../fonts/avenir_heavy-webfont.woff') format('woff'),
-         url('../../fonts/avenir_heavy-webfont.ttf') format('truetype'),
-         url('../../fonts/avenir_heavy-webfont.svg#avenir_85_heavyheavy') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'champagne__limousinesbold';
-    src: url('../../fonts/champagne__limousines_bold-webfont.eot');
-    src: url('../../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/champagne__limousines_bold-webfont.woff2') format('woff2'),
-         url('../../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
-         url('../../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
-         url('../../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'champagne__limousinesitalic';
-    src: url('../../fonts/champagne__limousines_italic-webfont.eot');
-    src: url('../../fonts/champagne__limousines_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/champagne__limousines_italic-webfont.woff2') format('woff2'),
-         url('../../fonts/champagne__limousines_italic-webfont.woff') format('woff'),
-         url('../../fonts/champagne__limousines_italic-webfont.ttf') format('truetype'),
-         url('../../fonts/champagne__limousines_italic-webfont.svg#champagne__limousinesitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 @font-face {
     font-family: 'champagne__limousinesregular';

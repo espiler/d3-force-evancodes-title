@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <title>Evan Codes</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="client/css/angular-material.css"/>
     <link rel="stylesheet" href="client/css/main.css"/>
     <link rel="shortcut icon" href="images/monkey.png"/>
@@ -13,52 +14,29 @@
 <!-- Header with Gold scales, D3, "EVAN CODES", blog subtitle -->
     <md-button class="md-raised md-primary homeButton" href="#/">Home</md-button>
     <md-button ng-controller="AboutController" ng-click="showAdvanced($event)" class="md-raised md-primary aboutButton">About</md-button>
+    <div class="dropdown projectDrop">
+  <button class="btn btn-default dropdown-toggle projectButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Live Projects
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.wafflepress.org/#/users/espiler" target="blank">Wafflepress</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://stockfuse.herokuapp.com" target="blank">Stockfuse</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://friendguessr.meteor.com" target="blank">FriendGuessr</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" target="blank">HotStuff</a></li>
+  </ul>
+</div>
     <div class="d3head">
     </div>
 
     <div class="spacer"> </div>
 
-<!-- Project Links -->
-    <div class="projects">
-      <div class="projectHead"> 
-          Projects
-      </div>
-      <div class="projectItems">
-        <div class="oneProject"> 
-          <a href="http://friendguessr.meteor.com" target="blank">
-            &bull; Twitter FriendGuessr 
-          </a>
-        </div>
-        <div class="oneProject"> 
-          <a href="http://www.wafflepress.org/#/users/espiler" target="blank">
-            &bull; Wafflepress 
-          </a>
-        </div>
-        <div class="oneProject"> 
-          <a href="http://stockfuse.herokuapp.com" target="blank">
-            &bull; StockFuse 
-          </a>
-        </div>
-        <div class="oneProject"> 
-          <a href="">
-            &bull; wutz hot
-          </a>
-        </div>
-      </div>
-    </div>
-
 <!-- MAIN CONTAINER for Snippets or Blog Post -->
     <div ui-view></div>
 
 <!--FOOTER-->
-  <div class="container footer">
-      <hr>
+  <div class="footer">
       <footer>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-4">
-            <small class="breadcrumb">Copyright &copy; Evan Spiler, 2014</small>
-          </div>
-        </div>
       </footer>
   </div>
 
