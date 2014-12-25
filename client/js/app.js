@@ -1,8 +1,6 @@
 angular.module('evancodes', [
 	'evancodes.main',
 	'evancodes.posts',
-  'evancodes.newPost',
-  'evancodes.services',
   'evancodes.about',
 	'ui.router',
   'ngSanitize',
@@ -21,10 +19,5 @@ angular.module('evancodes', [
       templateUrl: 'client/templates/post.html',
       controller: 'PostController',
       url: '/posts/:id',
-    })
-    .state('makeNewPostShindig', {
-      templateUrl: 'client/templates/newPost.html',
-      controller: 'NewPostController',
-      url: '/makeNewPostShindig'
     })
 });
