@@ -69,6 +69,13 @@ var initForce = function(){
 
 
 	//add nodes to svg object and set properties to those predefined in datum
+	subtitle = svg.append('image')
+		.attr('xlink:href','images/subtitle.png')
+		.attr('x', width/2.77)
+		.attr('y', height/2)
+		.attr('height', '90px')
+		.attr('width', '26%')
+	
 	nodes = svg.selectAll('.node')
 		.data(nodesData)
 		.enter().append('circle')
@@ -87,12 +94,7 @@ var initForce = function(){
 		.attr('height', '90px')
 		.attr('width', '23%')
 
-	subtitle = svg.append('image')
-		.attr('xlink:href','images/subtitle.png')
-		.attr('x', width/2.77)
-		.attr('y', height/2)
-		.attr('height', '90px')
-		.attr('width', '26%')
+
 
 	force.on('tick', tick)
 
