@@ -4,7 +4,9 @@
       <div class="snippetTitle"> 
           {{post.title}}
       </div>
-      <div class="snippetBody" ng-bind-html="post.content">
+      <div class="snippetBody"> 
+      	<div class="snippeContent" ng-bind-html="post.content | limitTo: 650"></div>
+	      	<p class="ellipses"> -view post </p>
       </div>
   </a>
 </div>

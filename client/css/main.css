@@ -84,7 +84,7 @@ h6 {
 .aboutButton {
     position: absolute;
     padding: 10px 10px;
-    margin: 30px 0 0px 100px;
+    margin: 30px 10px 0 100px;
     color: black;
 }
 
@@ -99,7 +99,6 @@ h6 {
 .cancel {
     float: right;
 }
-
 
 
 /************ BLOG SNIPPETS **************/
@@ -131,14 +130,20 @@ h6 {
     margin: -20px 0 0 20px; 
     width: 65%;
     border-radius: 10px;
-    padding: 30px 45px 20px 30px;
+    padding: 30px 23px 20px 30px;
     font-family: 'geosansLight';
     color: black;
 
 }
 
 .snippetBody img {
-    height: 300px;
+    height: 200px;
+}
+
+.ellipses {
+    color: black;
+    text-align: right;
+    font-size: 20px;
 }
 
 /************ PROJECTS **************/
