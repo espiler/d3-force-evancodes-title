@@ -5,14 +5,9 @@ angular.module('evancodes.about', [])
   $scope.showAdvanced = function(ev) {
     $mdDialog.show({
       controller: DialogController,
-      templateUrl: 'client/templates/dialog.html',
+      templateUrl: 'client/templates/about.html',
       targetEvent: ev,
     })
-    .then(function(answer) {
-      $scope.alert = 'You said the information was "' + answer + '".';
-    }, function() {
-      $scope.alert = 'You cancelled the dialog.';
-    });
   };
 })
 

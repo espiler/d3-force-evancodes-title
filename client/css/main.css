@@ -29,7 +29,7 @@ pre {
 
 body {
     color: transparent;
-	background-image: url("../../images/background_light.jpg");
+	background-image: url("../../images/background.png");
     background-attachment: fixed;
     background-size: 600px;
     background-repeat: repeat;
@@ -92,16 +92,33 @@ h6 {
 
 /************ ABOUT WINDOW **************/
 
+.md-content p {
+    background-color: black;
+}
+
 .aboutWindow {
-    color: black;
+    color: white;
+    background-color: rgb(30,30,30);
+    padding: 25px 25px;
+}
+
+.aboutWindow a {
+    color: white;
 }
 
 .cancel {
+    color: white;
     float: right;
 }
 
+.profilePic {
+    float: left;
+    margin-right: 20px;
+    height: 150px;
+}
 
-/************ BLOG SNIPPETS **************/
+
+/************ BLOG POSTS/SNIPPETS **************/
 
 .snippets {
     margin-top: 20px;
@@ -118,13 +135,13 @@ h6 {
     text-indent: 20px;
     padding: 14px 20px 0 0;
     font-family: 'geosansLight';
-    font-size: 20px;
+    font-size: 22px;
     color: white;
 
 }
 
 
-.snippetBody {
+.snippetBody, .postBody {
     background-color: rgb(180,180,180);
     /*height: 100px;*/
     margin: -20px 0 0 20px; 
@@ -137,8 +154,13 @@ h6 {
 }
 
 .snippetBody img {
-    height: 200px;
+    max-height: 200px;
 }
+
+.postBody img {
+    max-height: 350px;
+}
+
 
 .ellipses {
     color: black;

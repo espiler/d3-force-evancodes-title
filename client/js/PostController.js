@@ -12,7 +12,7 @@ angular.module('evancodes.posts', [])
 				$scope.post = currentPost;
 				console.log($scope.post);
 				$('.snippetTitle').text($scope.post.title);
-				$('.snippetBody').html($scope.post.content);
+				$('.postBody').html($scope.post.content);
 			}
 		})
 	}

@@ -28,14 +28,3 @@ angular.module('evancodes', [
       url: '/makeNewPostShindig'
     })
 });
-
-// .factory('httpRequestInterceptor', ['$q', '$location', '$rootScope', function($q, $location) {
-//   return {
-//     'responseError': function(rejection) {
-//       if (rejection.status === 403) {
-//         $location.path('/');
-//         return $q.reject(rejection);
-//       }
-//   	}
-//   }
-// }]);
