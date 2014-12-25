@@ -6,12 +6,6 @@ angular.module('evancodes.main', [])
 
 	var update = function() {
 		console.log('updating.......')
-		// console.log('dom element: ', $('.snippetBody')[0])
-		// console.log('scope post: ', $scope.posts[0].content)
-		// domElems = $('.snippetBody');
-		// for (var i=0; i<domElems.length; i++) {
-		// 	domElems.html($scope.posts[i].content);
-		// }
 	}
 
 	$scope.getAllPosts = function() {

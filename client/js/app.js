@@ -1,6 +1,7 @@
 angular.module('evancodes', [
 	'evancodes.main',
 	'evancodes.posts',
+  'evancodes.services',
   'evancodes.about',
 	'ui.router',
   'ngSanitize',
