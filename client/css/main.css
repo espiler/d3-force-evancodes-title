@@ -37,34 +37,6 @@ body {
     /*overflow: hidden;*/
 }
 
-.title h4 {
-    text-align: center;
-    font: normal 55px 'avenir_85_heavyheavy', sans-serif;
-    line-height: 65px;
-    color: rgb(25,25,25);
-    transform:scale(1.07,1); /* W3C */
-    -webkit-transform:scale(1.07,1); /* Safari and Chrome */
-    -moz-transform:scale(1.07,1); /* Firefox */
-    -ms-transform:scale(1.07,1); /* IE 9 */
-    -o-transform:scale(1.07,1); /* Opera */
-    /*background: url("../../images/background.jpg"); 
-    -webkit-background-clip: text, border; */
-    /*color: transparent;*/
-
-}
-
-h6 {
-    text-align: center;
-    color: white;
-    font: normal 30px 'champagne__limousinesregular', sans-serif;
-    transform:scale(1.1,1); /* W3C */
-    -webkit-transform:scale(1.1,1); /* Safari and Chrome */
-    -moz-transform:scale(1.1,1); /* Firefox */
-    -ms-transform:scale(1.1,1); /* IE 9 */
-    -o-transform:scale(1.1,1); /* Opera */
-   
-}
-
 .d3svg {
 	display: block;
 	margin: 0 auto 0 auto;
@@ -88,6 +60,9 @@ h6 {
     color: black;
 }
 
+.spacer {
+    margin-bottom: 350px;
+}
 
 
 /************ ABOUT WINDOW **************/
@@ -131,7 +106,7 @@ h6 {
     box-shadow: 1px 1px 9px 0px black;
     height: 40px;
     width: auto;
-    margin: 50px 0 0 -10px;
+    margin: 50px 0 0 0px;
     text-indent: 20px;
     padding: 14px 20px 0 0;
     font-family: 'geosansLight';

@@ -11,6 +11,7 @@ var force;
 var nodes;
 var mouse;
 var title;
+var subtitle;
 
 //keep physics/style figures here for easy modification
 var gravity = 0.11;
@@ -79,13 +80,19 @@ var initForce = function(){
 		.style("fill", function(d, i) { return d.fill? d.fill : color(i % 10) })
 		.style("stroke-width", strokeWidth);
 
-	// title = svg.append('image')
-	// 	.attr('xlink:href','images/evancodes-white2.png')
-	// 	.attr('x', width/2.7)
-	// 	.attr('y', height/3)
-	// 	.attr('height', '20%')
-	// 	.attr('width', '20%')
+	title = svg.append('image')
+		.attr('xlink:href','images/evancodes.png')
+		.attr('x', width/2.7)
+		.attr('y', height/3)
+		.attr('height', '90px')
+		.attr('width', '23%')
 
+	subtitle = svg.append('image')
+		.attr('xlink:href','images/subtitle.png')
+		.attr('x', width/2.77)
+		.attr('y', height/2)
+		.attr('height', '90px')
+		.attr('width', '26%')
 
 	force.on('tick', tick)
 
