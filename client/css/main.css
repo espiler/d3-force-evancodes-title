@@ -96,6 +96,14 @@ body {
     height: 150px;
 }
 
+.jellyka {
+    font-family: 'jellyka'
+}
+
+.sansFish {
+    font-family: 'sans_fishes';
+}
+
 
 /************ BLOG POSTS/SNIPPETS **************/
 
@@ -190,5 +198,10 @@ body {
 @font-face {
     font-family: 'geosansLight';
     src: url('../../fonts/geosansLight.ttf');
+}
+
+@font-face {
+    font-family: 'jellyka';
+    src: url('../../fonts/Jellyka_Castle__s_Queen.ttf');
 }
 
