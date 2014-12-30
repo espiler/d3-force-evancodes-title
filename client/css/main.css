@@ -97,7 +97,8 @@ body {
 }
 
 .jellyka {
-    font-family: 'jellyka'
+    font-family: 'jellyka';
+    font-size: 80px;
 }
 
 .sansFish {
