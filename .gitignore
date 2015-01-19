@@ -1,7 +1,5 @@
 *.swp
 *.swo
-node_modules
 /data/**
-bower_components
 new_post
 .DS_store
