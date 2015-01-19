@@ -10,26 +10,24 @@
   </head>
   <body>
     
-
 <!-- Header with Gold scales, D3, "EVAN CODES", blog subtitle -->
     <md-button class="md-raised md-primary homeButton" href="#/">Home</md-button>
     <md-button ng-controller="AboutController" ng-click="showAdvanced($event)" class="md-raised md-primary aboutButton">About</md-button>
     <div class="dropdown projectDrop">
-  <md-button class="btn btn-default md-raised md-primary dropdown-toggle projectButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-    Live Projects
-    <span class="caret"></span>
-  </md-button>
-  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.wafflepress.org/#/users/espiler" target="blank">Wafflepress</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://stockfuse.herokuapp.com" target="blank">Stockfuse</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="http://friendguessr.meteor.com" target="blank">FriendGuessr</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#" target="blank">HotStuff</a></li>
-  </ul>
-</div>
-    <div class="d3head">
+      <md-button class="btn btn-default md-raised md-primary dropdown-toggle projectButton" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      Live Projects
+      <span class="caret"></span>
+      </md-button>
+      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="http://ephemeralmap.com" target="blank">Ephemeral</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="http://www.wafflepress.org/#/users/espiler" target="blank">Wafflepress</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="http://stockfuse.herokuapp.com" target="blank">Stockfuse</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="http://friendguessr.meteor.com" target="blank">FriendGuessr</a></li>
+      </ul>
     </div>
-
-    <div class="spacer"> </div>
+    
+    <div class="d3head"></div>
+    <div class="spacer"></div>
 
 <!-- MAIN CONTAINER for Snippets or Blog Post -->
     <div ui-view></div>

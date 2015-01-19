@@ -1,40 +1,48 @@
 /************ DEFAULTS **************/
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 pre {
-    background-color: black;
-    color: white;
-    padding: 15px 15px;
+  background-color: black;
+  color: white;
+  padding: 15px 15px;
 }
 
+.jellyka {
+  font-family: 'jellyka';
+  font-size: 80px;
+}
 
+.sansFish {
+  font-family: 'sans_fishes';
+}
 
 /************ HEADER/FOOTER **************/
 
 .node {
-    fill: #ccc;
-    stroke: #fff;
-    stroke-width: 2px;
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 2px;
 }
 
 .d3head {
-    background-image: url("../../images/goldScalePiece.png");
-    height: 100px;
-    width: 100%;
-    margin-top: -10px;
+  background-image: url("../../images/swirl_pattern.png");
+  height: 80px;
+  width: 100%;
+  margin-top: -10px;
+  box-shadow: 0px 9px 32px 3px rgba(0,0,0,0.75);
 }
 
 body {
-    color: transparent;
+  color: transparent;
 	background-image: url("../../images/background.png");
-    background-attachment: fixed;
-    background-size: 600px;
-    background-repeat: repeat;
-    /*background-clip: text;*/
-    /*overflow: hidden;*/
+  background-attachment: fixed;
+  background-size: 600px;
+  background-repeat: repeat;
+  /*background-clip: text;*/
+  /*overflow: hidden;*/
 }
 
 .d3svg {
@@ -43,28 +51,28 @@ body {
 }
 
 .homeButton {
-    position: absolute;
-    padding: 10px 10px;
-    margin: 30px 0 0 20px;
-    color: black;
+  position: absolute;
+  padding: 10px 10px;
+  margin: 23px 0 0 16px;
+  width: 70px;
+  color: black;
 }
 
 .aboutButton {
-    position: absolute;
-    padding: 10px 10px;
-    margin: 30px 10px 0 100px;
-    color: black;
+  position: absolute;
+  padding: 10px 10px;
+  margin: 23px 0 0 100px;
+  color: black;
+  width: 70px;
 }
 
 .spacer {
-    margin-bottom: 350px;
+  margin-bottom: 350px;
 }
 
 .footer {
-  position: relative; 
   text-align: center;
   border-top: 2px solid white;
-  margin-top: 100px;
   color: white;
 }
 
@@ -72,144 +80,133 @@ body {
 /************ ABOUT WINDOW **************/
 
 .md-content p {
-    background-color: black;
+  background-color: black;
 }
 
 .aboutWindow {
-    color: white;
-    background-color: rgb(30,30,30);
-    padding: 25px 25px;
+  color: white;
+  background-color: rgb(30,30,30);
+  padding: 25px 25px;
 }
 
 .aboutWindow a {
-    color: white;
+  color: white;
 }
 
 .cancel {
-    color: white;
-    float: right;
+  color: white;
+  float: right;
 }
 
 .profilePic {
-    float: left;
-    margin-right: 20px;
-    height: 150px;
-}
-
-.jellyka {
-    font-family: 'jellyka';
-    font-size: 80px;
-}
-
-.sansFish {
-    font-family: 'sans_fishes';
+  float: left;
+  margin-right: 20px;
+  height: 150px;
 }
 
 
 /************ BLOG POSTS/SNIPPETS **************/
 
 .snippets {
-    margin-top: 20px;
-    color: white;
+  margin-top: 20px;
+  color: white;
 }
 
 .snippetTitle {
-    display: inline-block;
-    background-color: rgb(11,87,160);
-    box-shadow: 1px 1px 9px 0px black;
-    height: 50px;
-    width: auto;
-    margin: 50px 0 0 0px;
-    text-indent: 20px;
-    padding: 8px 20px 25px 0;
-    font-family: 'geosansLight';
-    font-size: 24px;
-    color: white;
-
+  display: inline-block;
+  background-color: rgb(11,87,160);
+  box-shadow: 1px 1px 9px 0px black;
+  height: 50px;
+  width: auto;
+  margin: 50px 0 0 0px;
+  text-indent: 20px;
+  padding: 8px 20px 25px 0;
+  font-family: 'geosansLight';
+  font-size: 24px;
+  color: white;
 }
 
 
 .snippetBody, .postBody {
-    background-color: rgb(180,180,180);
-    margin: -20px 0 0 20px; 
-    border-radius: 10px;
-    padding: 30px 23px 20px 30px;
-    font-family: 'geosansLight';
-    color: black;
-    font-size: 18px;
-
+  background-color: rgb(180,180,180);
+  margin: -20px 0 0 20px; 
+  border-radius: 10px;
+  padding: 30px 23px 20px 30px;
+  font-family: 'geosansLight';
+  color: black;
+  font-size: 18px;
 }
 
 .snippetBody a, .postBody a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .snippetBody img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .postBody img {
-    max-height: 350px;
+  max-height: 350px;
 }
 
 
 .ellipses {
-    color: black;
-    text-align: right;
-    font-size: 20px;
+  color: black;
+  text-align: right;
+  font-size: 20px;
 }
 
 /************ PROJECTS **************/
 
 .projectDrop {
-    position: absolute;
-    right: 17px;
-    top: 21px;
+  position: absolute;
+  right: 23px;
+  top: 14px;
 }
 
 .projectButton, .projectButton:hover, .projectButton:focus {
-    background-color: #1565C0;
-    color: white;
-    height: 40px;
-    border-width: 0px;
-    padding-left: 10px;
+  background-color: #1565C0;
+  color: white;
+  height: 40px;
+  border-width: 0px;
+  padding-left: 10px;
 }
 
 /************ FONTS **************/
 
 
 @font-face {
-    font-family: 'champagne__limousinesregular';
-    src: url('../../fonts/champagne_limousines-webfont.eot');
-    src: url('../../fonts/champagne_limousines-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/champagne_limousines-webfont.woff2') format('woff2'),
-         url('../../fonts/champagne_limousines-webfont.woff') format('woff'),
-         url('../../fonts/champagne_limousines-webfont.ttf') format('truetype'),
-         url('../../fonts/champagne_limousines-webfont.svg#champagne__limousinesregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'champagne__limousinesregular';
+  src: url('../../fonts/champagne_limousines-webfont.eot');
+  src: url('../../fonts/champagne_limousines-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/champagne_limousines-webfont.woff2') format('woff2'),
+       url('../../fonts/champagne_limousines-webfont.woff') format('woff'),
+       url('../../fonts/champagne_limousines-webfont.ttf') format('truetype'),
+       url('../../fonts/champagne_limousines-webfont.svg#champagne__limousinesregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'sans_fishes';
-    src: url('../../fonts/sansFishes.ttf');
+  font-family: 'sans_fishes';
+  src: url('../../fonts/sansFishes.ttf');
 }
 
 @font-face {
-    font-family: 'geosansLight';
-    src: url('../../fonts/geosansLight.ttf');
+  font-family: 'geosansLight';
+  src: url('../../fonts/geosansLight.ttf');
 }
 
 @font-face {
-    font-family: 'jellyka';
-    src: url('../../fonts/jellyka_castle__s_queen-webfont.eot');
-    src: url('../../fonts/jellyka_castle__s_queen-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/jellyka_castle__s_queen-webfont.woff2') format('woff2'),
-         url('../../fonts/jellyka_castle__s_queen-webfont.woff') format('woff'),
-         url('../../fonts/jellyka_castle__s_queen-webfont.ttf') format('truetype'),
-         url('../../fonts/jellyka_castle__s_queen-webfont.svg#jellyka_castles_queenregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'jellyka';
+  src: url('../../fonts/jellyka_castle__s_queen-webfont.eot');
+  src: url('../../fonts/jellyka_castle__s_queen-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/jellyka_castle__s_queen-webfont.woff2') format('woff2'),
+       url('../../fonts/jellyka_castle__s_queen-webfont.woff') format('woff'),
+       url('../../fonts/jellyka_castle__s_queen-webfont.ttf') format('truetype'),
+       url('../../fonts/jellyka_castle__s_queen-webfont.svg#jellyka_castles_queenregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 
 }
